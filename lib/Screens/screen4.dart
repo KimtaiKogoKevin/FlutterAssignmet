@@ -23,7 +23,6 @@ class _Screen4State extends State<Screen4> {
         fontWeight: FontWeight.bold, fontSize: 18, color: Colors.black),
   );
 
-
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -32,9 +31,10 @@ class _Screen4State extends State<Screen4> {
           backgroundColor: Colors.white,
           appBar: AppBar(
             leading: InkWell(
-                onTap: (){
+                onTap: () {
                   Navigator.pushNamed(context, 'screen2');
-                },child: back),
+                },
+                child: back),
             backgroundColor: Colors.white70,
             actions: [
               IconButton(
@@ -81,16 +81,28 @@ class _Screen4State extends State<Screen4> {
               )
             ],
             bottom: TabBar(
+
               indicator: BoxDecoration(
+
                 color: Colors.orangeAccent,
                 borderRadius: BorderRadius.circular(20),
               ),
               labelColor: Colors.black,
-              tabs: const [
-                Tab(child: Text('ONE WAY')),
-                Tab(child: Text('ROUND TRIP')),
-                Tab(
-                  child: Text('MULTI CITY'),
+              tabs: [
+                InkWell(onTap: () {
+                  Navigator.pushNamed(context, 'screen4');
+                }, child: const Tab(child: Text('ONE WAY'))),
+                InkWell(onTap: () {
+                  Navigator.pushNamed(context,'roundTripPage');
+                }, child: const Tab(child: Text('ROUND TRIP'))),
+                InkWell(
+                  onTap: () {
+                    Navigator.pushNamed(context,'multiCityPage');
+
+                  },
+                  child: const Tab(
+                    child: Text('MULTI CITY'),
+                  ),
                 ),
               ],
             ),
@@ -338,10 +350,10 @@ class _Screen4State extends State<Screen4> {
                                               Border.all(color: Colors.black),
                                           borderRadius: const BorderRadius.all(
                                               Radius.circular(10.0))),
-                                      child: Center(
+                                      child: const Center(
                                         child: Text(
                                           "Armed forces",
-                                          style: const TextStyle(
+                                          style: TextStyle(
                                               color: Colors.black,
                                               fontSize: 15),
                                           textAlign: TextAlign.center,
@@ -438,8 +450,8 @@ class _Screen4State extends State<Screen4> {
                         ),
                       ),
 
-                      SizedBox(height: 10),
-                      Divider(
+                      const SizedBox(height: 10),
+                      const Divider(
                         color: Colors.black,
                         height: 50,
                       ),
@@ -459,10 +471,10 @@ class _Screen4State extends State<Screen4> {
                               children: const [
                                 Text('View All',
                                     style:
-                                    TextStyle(color: Colors.orangeAccent)),
+                                        TextStyle(color: Colors.orangeAccent)),
                                 SizedBox(width: 10),
-
-                                Icon(Icons.keyboard_arrow_right_sharp, color: Colors.orangeAccent),
+                                Icon(Icons.keyboard_arrow_right_sharp,
+                                    color: Colors.orangeAccent),
                               ],
                             )
                           ]),

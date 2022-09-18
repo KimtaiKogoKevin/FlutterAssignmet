@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_assignment/Screens/multicity.dart';
 
+import 'Screens/roundtrippage.dart';
 import 'Screens/screen2.dart';
 import 'Screens/screen3.dart';
 import 'Screens/screen4.dart';
@@ -34,7 +36,9 @@ class MyApp extends StatelessWidget {
       routes: {
         'screen2': (context) => Screen2(),
         'screen3': (context) => Screen3(),
-        'screen4': (context) => Screen4()
+        'screen4': (context) => Screen4(),
+        'roundTripPage':(context) => RoundTripPage(),
+        'multiCityPage':(context)=>MultiCity()
       },
     );
   }
