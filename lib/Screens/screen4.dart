@@ -426,6 +426,37 @@ class _Screen4State extends State<Screen4> {
                                 //const Text('Refer & Earn', style:TextStyle(color: Colors.orangeAccent))
                               ],
                             ),
+                            Column(
+                              children: [
+                                Container(
+                                  margin: const EdgeInsets.symmetric(
+                                      horizontal: 10),
+                                  height: 75.0,
+                                  width: 150.0,
+                                  color: Colors.transparent,
+                                  child: Container(
+                                      decoration: BoxDecoration(
+                                          color: Colors.white,
+                                          border:
+                                          Border.all(color: Colors.black),
+                                          borderRadius: const BorderRadius.all(
+                                              Radius.circular(10.0))),
+                                      child: const Center(
+                                        child: Text(
+                                          "Double Seat",
+                                          style: TextStyle(
+                                              color: Colors.black,
+                                              fontSize: 15),
+                                          textAlign: TextAlign.center,
+                                        ),
+                                      )),
+                                ),
+                                const SizedBox(height: 5),
+                                const Text('What is this?', style:TextStyle(color: Colors.orangeAccent))
+                              ],
+                            ),
+
+
                           ],
                         ),
                       ),
