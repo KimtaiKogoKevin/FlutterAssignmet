@@ -23,13 +23,13 @@ class Screen1 extends StatelessWidget {
                   ),
                 ),
                 SizedBox(width: 5),
-                Text(
-                  'Login/Signup',
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 16,
-                      color: Colors.blueGrey),
-                ),
+                // Text(
+                //   'Login/Signup',
+                //   style: TextStyle(
+                //       fontWeight: FontWeight.bold,
+                //       fontSize: 16,
+                //       color: Colors.blueGrey),
+                // ),
               ]),
               const SizedBox(height: 20),
               ElevatedButton(
@@ -68,7 +68,7 @@ class Screen1 extends StatelessWidget {
               const SizedBox(height: 20),
               const Center(
                 child: Text(
-                  'Use Mobile No to Login/Signup',
+                  ' Login/Signup',
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 16,
@@ -78,19 +78,19 @@ class Screen1 extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-              Container(
-                width: 350,
-                height: 70,
-                child: TextFormField(
-                  keyboardType: TextInputType.number,
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(5.0)),
-                    labelText: '+9199999999999',
-                  ),
-                  onTap: () {},
-                ),
-              ),
+              // Container(
+              //   width: 350,
+              //   height: 70,
+              //   child: TextFormField(
+              //     keyboardType: TextInputType.number,
+              //     decoration: InputDecoration(
+              //       border: OutlineInputBorder(
+              //           borderRadius: BorderRadius.circular(5.0)),
+              //       labelText: '+9199999999999',
+              //     ),
+              //     onTap: () {},
+              //   ),
+              // ),
               const SizedBox(height: 20),
               SizedBox(
                 width: 350,
@@ -102,11 +102,11 @@ class Screen1 extends StatelessWidget {
                     minimumSize: const Size(350, 70),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, 'screen2');
+                    Navigator.pushNamed(context, 'login');
                   },
                   child: const Center(
                     child: Text(
-                      'Continue',
+                      'Login',
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.grey,

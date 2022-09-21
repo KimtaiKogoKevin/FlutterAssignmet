@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_assignment/Screens/multicity.dart';
 
+import 'Screens/authentication/login.dart';
+import 'Screens/authentication/register.dart';
 import 'Screens/roundtrippage.dart';
 import 'Screens/screen2.dart';
 import 'Screens/screen3.dart';
@@ -34,11 +36,15 @@ class MyApp extends StatelessWidget {
       ),
       home: const Screen1(),
       routes: {
-        'screen2': (context) => Screen2(),
-        'screen3': (context) => Screen3(),
-        'screen4': (context) => Screen4(),
-        'roundTripPage':(context) => RoundTripPage(),
-        'multiCityPage':(context)=>MultiCity()
+        'screen1':(context)=>const Screen1(),
+        'screen2': (context) => const Screen2(),
+        'screen3': (context) => const Screen3(),
+        'screen4': (context) => const Screen4(),
+        'roundTripPage':(context) => const RoundTripPage(),
+        'multiCityPage':(context)=>const MultiCity(),
+        'login':(context)=>const Login(),
+        'register':(context)=>const Register(),
+
       },
     );
   }
