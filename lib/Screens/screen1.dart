@@ -145,7 +145,7 @@ class Screen1 extends StatelessWidget {
               FittedBox(
                 fit: BoxFit.contain,
                 child: Container(
-                 height: 150,
+                 height: 190,
                   padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 5),
 
                   decoration: const BoxDecoration(
